@@ -29,6 +29,7 @@ Not all of Twilio's API endpoints are publically available. If you are one of th
    cd twilio-maltego
    python3 setup.py
 ```
+Enter your Accound_SID and Auth_Token when prompted. Import Twilio-Maltego.mtz into Maltego to begin running locally.
 
 ## 🧙 Features
 
