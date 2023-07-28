@@ -27,9 +27,12 @@ def read_account_credentials():
     except Exception as e:
         print(f"An error occurred while reading the credentials: {e}")
 
-def basic_phone_lookup(account_sid: str, auth_token: str, phone_number: str):
+def twilio_lookup(account_sid: str, auth_token: str, phone_number: str, fields: list):
     client = Client(account_sid, auth_token)
-    response = client.lookups.v2.phone_numbers(phone_number).fetch()
+    if fields:
+        response = client.lookups.v2.phone_numbers(phone_number).fetch(fields = ",".join(fields))
+    else:
+        response = client.lookups.v2.phone_numbers(phone_number).fetch()
 
     return response
 
@@ -65,7 +68,8 @@ class validateNumber(DiscoverableTransform):
 
             # Perform Twilio API lookup using stored credentials
             account_sid, auth_token = read_account_credentials()
-            lookup = basic_phone_lookup(account_sid, auth_token, phone_number)
+            fields = []
+            lookup = twilio_lookup(account_sid, auth_token, phone_number, fields)
 
             # Convert results to entities
             if lookup.valid == True:
