@@ -7,7 +7,7 @@ import csv
 
 def read_account_credentials():
     try:
-        with open("api.key", "r") as file:
+        with open(".key", "r") as file:
             credentials = file.readlines()
 
         account_sid = None

@@ -11,10 +11,10 @@ def build_config():
 # Store Twilio API creds
 def store_account_credentials():
 
-    if os.path.exists("api.key"):
+    if os.path.exists(".key"):
         answer = ""
         while answer not in ['y','n']:
-            answer = input("api.key already exist. Overwrite (y/n)? ").lower() 
+            answer = input(".key already exist. Overwrite (y/n)? ").lower() 
 
         if answer == 'n':
             return
@@ -23,10 +23,10 @@ def store_account_credentials():
     auth_token = input("Please enter your Twilio Auth Token: ")
 
     try:
-        with open("api.key", "w") as file:
+        with open(".key", "w") as file:
             file.write(f"ACCOUNT_SID={account_sid}\n")
             file.write(f"AUTH_TOKEN={auth_token}\n")
-        print("Account credentials have been successfully stored in api.key.")
+        print("Account credentials have been successfully stored in .key.")
     except Exception as e:
         print(f"An error occurred while storing the credentials: {e}")
 
