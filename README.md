@@ -1,7 +1,6 @@
-# Twilio-Maltego
-### Utilize Twilio API for Maltego Transforms
+<img src="./img/twilio-maltego2.png">
 
-<img src="https://media.tenor.com/6qmYiGDzHC4AAAAM/chameleon-dance.gif">
+### Utilize Twilio API for Maltego Transforms
 
 [![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/)
 
