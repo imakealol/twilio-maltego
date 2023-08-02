@@ -9,7 +9,7 @@ Version: 1.0.0-beta
 
 ## 💎 About
 
-Convert data from [Twilio's API](https://www.twilio.com/docs/lookup/v2-api) to Maltego entities (key required). At this time, Twilio's basic phone number validation is free. The others cost per lookup, so maybe don't get too carried away💸.
+Convert data from [Twilio's API](https://www.twilio.com/docs/lookup/v2-api) to Maltego entities (key required). At this time, Twilio's basic phone number validation is free. The others cost per lookup, so maybe don't get too carried away💸. Hey noobs, *is it still OSINT if you have to pay for the INT?*
 
 Please use this tool ethically by respecting people's privacy and only collecting intelligence where explicit permission has been granted or otherwise legally qualified to do so. We are not responsible for any illegal use.
 
@@ -29,6 +29,7 @@ Not all of Twilio's API endpoints are publically available. If you are one of th
    cd twilio-maltego
    python3 setup.py
 ```
+Enter your Accound_SID and Auth_Token when prompted. Import Twilio-Maltego.mtz into Maltego to begin running locally.
 
 ## 🧙 Features
 
