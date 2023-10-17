@@ -48,7 +48,7 @@ Enter your Accound_SID and Auth_Token when prompted. Import Twilio-Maltego.mtz i
 🚫 not publically available
    
 ## 📜 License
-<img src="https://creativecommons.org/images/deed/FreeCulturalWorks_seal_x2.jpg" height="100px">
+<img src="https://mirrors.creativecommons.org/presskit/logos/cc.logo.large.png" height="60px">
 
 [Creative Commons Attribution-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-sa/4.0/)  
 Copyright (C) 2023 KodamaChameleon
